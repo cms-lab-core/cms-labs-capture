@@ -1,0 +1,6 @@
+.idea/
+build/
+dist/
+*.test
+*.out
+.DS_Store

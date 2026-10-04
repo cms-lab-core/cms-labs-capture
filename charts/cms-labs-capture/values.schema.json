@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["image", "controller"],
+  "properties": {
+    "image": {
+      "type": "object",
+      "required": ["repository", "pullPolicy"],
+      "properties": {
+        "repository": { "type": "string", "minLength": 1 },
+        "tag": { "type": "string" },
+        "pullPolicy": { "enum": ["Always", "IfNotPresent", "Never"] }
+      }
+    },
+    "controller": {
+      "type": "object",
+      "required": ["reconcileInterval", "sourceName", "sourceLabel", "managedNamespaceLabel", "managedNamespaceValue", "storageSize"],
+      "properties": {
+        "reconcileInterval": { "type": "string", "minLength": 2 },
+        "sourceName": { "type": "string", "minLength": 1 },
+        "sourceLabel": { "type": "string", "minLength": 1 },
+        "managedNamespaceLabel": { "type": "string", "minLength": 1 },
+        "managedNamespaceValue": { "type": "string", "minLength": 1 },
+        "proxyNamespace": { "type": "string", "minLength": 1 },
+        "storageSize": { "type": "string", "minLength": 2 },
+        "resources": { "type": "object" }
+      }
+    }
+  }
+}

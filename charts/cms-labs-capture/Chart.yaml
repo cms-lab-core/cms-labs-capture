@@ -1,0 +1,12 @@
+apiVersion: v2
+name: cms-labs-capture
+description: Cluster controller for namespace-local CMS Labs packet capture brokers
+type: application
+version: 0.1.0
+appVersion: "0.1.0"
+home: https://github.com/cms-lab-core/cms-labs-capture
+sources:
+  - https://github.com/cms-lab-core/cms-labs-capture
+maintainers:
+  - name: cms-lab-core
+    url: https://github.com/cms-lab-core
