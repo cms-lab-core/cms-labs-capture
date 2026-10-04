@@ -1,5 +1,5 @@
 image:
-  repository: ghcr.io/cms-lab-core/cms-labs-capture
+  repository: ghcr.io/maintainer64/cms-labs-capture
   tag: ""
   pullPolicy: IfNotPresent
 

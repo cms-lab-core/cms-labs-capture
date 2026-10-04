@@ -20,7 +20,7 @@ ARG VERSION=dev
 
 LABEL org.opencontainers.image.title="cms-labs-capture" \
       org.opencontainers.image.description="Namespace-local packet capture broker for CMS Labs" \
-      org.opencontainers.image.source="https://github.com/cms-lab-core/cms-labs-capture" \
+      org.opencontainers.image.source="https://github.com/maintainer64/cms-labs-capture" \
       org.opencontainers.image.licenses="MIT" \
       org.opencontainers.image.version="${VERSION}"
 

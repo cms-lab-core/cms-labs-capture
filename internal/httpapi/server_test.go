@@ -10,9 +10,9 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/cms-lab-core/cms-labs-capture/internal/capture"
-	"github.com/cms-lab-core/cms-labs-capture/internal/config"
-	"github.com/cms-lab-core/cms-labs-capture/internal/kube"
+	"github.com/maintainer64/cms-labs-capture/internal/capture"
+	"github.com/maintainer64/cms-labs-capture/internal/config"
+	"github.com/maintainer64/cms-labs-capture/internal/kube"
 )
 
 type apiBackend struct{}

@@ -12,7 +12,7 @@ import (
 	"k8s.io/client-go/kubernetes/fake"
 	kubetesting "k8s.io/client-go/testing"
 
-	"github.com/cms-lab-core/cms-labs-capture/internal/config"
+	"github.com/maintainer64/cms-labs-capture/internal/config"
 )
 
 func TestReconcileCreatesCaptureRuntime(t *testing.T) {

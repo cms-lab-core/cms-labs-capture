@@ -4,9 +4,9 @@ description: Cluster controller for namespace-local CMS Labs packet capture brok
 type: application
 version: 0.1.0
 appVersion: "0.1.0"
-home: https://github.com/cms-lab-core/cms-labs-capture
+home: https://github.com/maintainer64/cms-labs-capture
 sources:
-  - https://github.com/cms-lab-core/cms-labs-capture
+  - https://github.com/maintainer64/cms-labs-capture
 maintainers:
-  - name: cms-lab-core
-    url: https://github.com/cms-lab-core
+  - name: maintainer64
+    url: https://github.com/maintainer64

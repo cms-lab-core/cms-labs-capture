@@ -32,8 +32,8 @@ jobs:
           push: true
           build-args: VERSION=${{ steps.version.outputs.value }}
           tags: |
-            ghcr.io/cms-lab-core/cms-labs-capture:${{ steps.version.outputs.value }}
-            ghcr.io/cms-lab-core/cms-labs-capture:latest
+            ghcr.io/maintainer64/cms-labs-capture:${{ steps.version.outputs.value }}
+            ghcr.io/maintainer64/cms-labs-capture:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
       - run: >-
@@ -41,7 +41,7 @@ jobs:
           --version "${{ steps.version.outputs.value }}"
           --app-version "${{ steps.version.outputs.value }}"
       - run: echo "${{ secrets.GITHUB_TOKEN }}" | helm registry login ghcr.io --username "${{ github.actor }}" --password-stdin
-      - run: helm push "dist/cms-labs-capture-${{ steps.version.outputs.value }}.tgz" oci://ghcr.io/cms-lab-core/charts
+      - run: helm push "dist/cms-labs-capture-${{ steps.version.outputs.value }}.tgz" oci://ghcr.io/maintainer64/charts
       - env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh release create "$GITHUB_REF_NAME" --verify-tag --generate-notes
