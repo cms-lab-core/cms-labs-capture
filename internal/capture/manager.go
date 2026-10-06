@@ -13,8 +13,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/maintainer64/cms-labs-capture/internal/config"
-	"github.com/maintainer64/cms-labs-capture/internal/kube"
+	"github.com/cms-lab-core/cms-labs-capture/internal/config"
+	"github.com/cms-lab-core/cms-labs-capture/internal/kube"
 )
 
 const pcapHeaderLength = 24

@@ -1,4 +1,4 @@
-module github.com/maintainer64/cms-labs-capture
+module github.com/cms-lab-core/cms-labs-capture
 
 go 1.26.8
 

@@ -21,7 +21,7 @@ import (
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/utils/ptr"
 
-	"github.com/maintainer64/cms-labs-capture/internal/config"
+	"github.com/cms-lab-core/cms-labs-capture/internal/config"
 )
 
 const (

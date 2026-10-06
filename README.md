@@ -10,7 +10,7 @@ Install the controller once per cluster:
 
 ```sh
 helm upgrade --install capture \
-  oci://ghcr.io/maintainer64/charts/cms-labs-capture \
+  oci://ghcr.io/cms-lab-core/charts/cms-labs-capture \
   --namespace cms-labs-system --create-namespace
 ```
 

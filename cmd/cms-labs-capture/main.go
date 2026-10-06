@@ -19,11 +19,11 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/clientcmd"
 
-	"github.com/maintainer64/cms-labs-capture/internal/capture"
-	"github.com/maintainer64/cms-labs-capture/internal/config"
-	capturecontroller "github.com/maintainer64/cms-labs-capture/internal/controller"
-	"github.com/maintainer64/cms-labs-capture/internal/httpapi"
-	"github.com/maintainer64/cms-labs-capture/internal/kube"
+	"github.com/cms-lab-core/cms-labs-capture/internal/capture"
+	"github.com/cms-lab-core/cms-labs-capture/internal/config"
+	capturecontroller "github.com/cms-lab-core/cms-labs-capture/internal/controller"
+	"github.com/cms-lab-core/cms-labs-capture/internal/httpapi"
+	"github.com/cms-lab-core/cms-labs-capture/internal/kube"
 )
 
 const serviceAccountToken = "/var/run/secrets/kubernetes.io/serviceaccount/token" //nolint:gosec // path, not credential.
